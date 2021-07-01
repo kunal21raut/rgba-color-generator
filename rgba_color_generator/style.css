@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 340px;
+    background: #fff;
+    border-radius: 8px;
+    font-family: 'Roboto', sans-serif;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.2);
+    overflow: hidden;
+    display: grid;
+    place-items: center;
+
+}
+
+.heading{
+    padding: 1.2rem 0;
+    color: rgb(51, 10, 78);
+}
+.slider{
+    width: 280px;
+    height: 310px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.slider input{
+    position: relative;
+    width: 100%;
+    height: 5px;
+    background: #ece8e8;
+    border-radius: 20px;
+    -webkit-appearance: none;
+    outline: none;
+}
+
+.slider input::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    background: #4760f0;
+    border-radius: 50%;
+}
+.output-box{
+    width: 280px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    line-height: 50px;
+   
+}
+
+.output-box .output{
+    width: 200px;
+    height: 50px;
+    background: #dbdbdb;
+    
+}
+
+.output-box .copyBtn{
+    width: 50px;
+    height: 50px;
+    border: 1px solid #dbdbdb;
+    color: #bfbfbf;
+    
+}
